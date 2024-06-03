@@ -1,0 +1,75 @@
+#root {
+  max-width: 80%;
+  margin-top: 40px !important;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+  /* border: 2px solid white; */
+}
+
+.title{
+  color: #77B8EB;
+  font-size: 3rem !important;
+  margin: 0;
+  padding: 15px 0px;
+  text-shadow: 0px 0px 50px #77B8EB;
+}
+
+.title2{
+  margin: 0px;
+  padding: 10px 5px;
+  text-shadow: 2px 2px 5px black;
+}
+
+.MyImg{
+  width: 30%;
+  filter: drop-shadow(0 0 7px rgba(0, 0, 0, 0.824));
+  mask-image: linear-gradient(black 80%,transparent);
+}
+
+@media screen and (max-width: 1020px) {
+  .MyImg{
+    width: 70%;
+  }
+
+  .flecha{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .flecha{
+    position: absolute;
+    top: 95.5vh !important;
+  }
+}
+
+.flecha{
+  position: absolute;
+  width: 25px;
+  top: 97vh;
+  animation: animate 1.5s infinite;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+}
+
+.flecha:hover{
+  filter: drop-shadow(0px 0px 5px #77b9eb9d);
+}
+
+.text{
+  font-size: 1.2rem;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+  
+}
