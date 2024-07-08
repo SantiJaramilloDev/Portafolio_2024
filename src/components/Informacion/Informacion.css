@@ -1,4 +1,143 @@
 .info{
   position: relative;
   top: 25vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 7rem;
+  /* border: 2px solid white; */
+}
+
+.info_left{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid white;
+  padding: 10px;
+}
+
+.left_title{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  width: 70%;
+  display: flex;
+  justify-content: first baseline;
+}
+
+.left_title h1{
+  margin: 0;
+  font-size: 2.5rem;
+  color: #77B8EB;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 3px black;
+}
+
+.left_buttons{
+  display: flex;
+  flex-direction: column;
+  align-items: first baseline;
+  width: 70%;
+}
+
+.cta {
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta:active{
+  border: none;
+}
+
+.cta span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 14px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+  fill: #77B8EB;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: white;
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #77B8EB;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.info_right{
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.segmentos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+
+.segmentos_title{
+  width: 100%;
+  display: flex;
+  justify-content: first baseline;
+}
+
+.segmentos_title h1{
+  font-size: 2rem;
+  color: #77B8EB;
+  margin: 0;
+  text-shadow: 1px 1px 3px black;
+  border-bottom: 2px solid white;
+}
+
+.segmentos_text{
+  width: 100%;
+  display: flex;
+  justify-content: first baseline;
+  margin-top: 1rem;
+}
+
+.segmentos_text p{
+  font-size: 1.3rem;
+  color: white;
+  margin: 0;
+  text-align: justify;
+  padding: 1px 6px;
 }

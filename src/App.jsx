@@ -8,7 +8,7 @@ function App() {
 
   const scrollPage = () => {
     window.scroll({
-      top: 100,
+      top: 500,
       left: 0,
       behavior: 'smooth'
     });
