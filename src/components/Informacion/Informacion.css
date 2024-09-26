@@ -12,16 +12,25 @@
   width: 40%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   border-right: 2px solid white;
   padding: 10px;
+  position: relative;
+}
+
+.left_nav{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  position: sticky;
+  top: 0;
+  padding: 15px 0px;
 }
 
 .left_title{
   font-size: 2rem;
   margin-bottom: 1rem;
-  width: 70%;
+  width: 100%;
   display: flex;
   justify-content: first baseline;
 }
@@ -38,7 +47,7 @@
   display: flex;
   flex-direction: column;
   align-items: first baseline;
-  width: 70%;
+  width: 100%;
 }
 
 .cta {
@@ -182,6 +191,9 @@
   align-items: center;
   width: 70%;
   margin-top: 1rem;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 15px;
 }
 
 .left_redes a{
@@ -220,6 +232,10 @@ ul {
   font-size: 14px;
   transition: all 0.3s ease;
 }
+
+.tooltip.or2{
+  width: 80px;
+}
 .example-2 .icon-content:hover .tooltip {
   opacity: 1;
   visibility: visible;
@@ -247,6 +263,11 @@ ul {
   width: 30px;
   height: 30px;
 }
+
+.imgCV{
+  z-index: 3;
+}
+
 .example-2 .icon-content a:hover {
   color: white;
 }
@@ -274,6 +295,12 @@ ul {
   background-color: #24262a;
 }
 
+.example-2 .icon-content a[data-social="cv"] .filled,
+.example-2 .icon-content a[data-social="cv"] ~ .tooltip {
+  background-color: #77B8EB;
+  color: black;
+}
+
 /* From Uiverse.io by Creatlydev */ 
 .card {
   margin: auto;
@@ -294,6 +321,7 @@ ul {
   font-size: 2rem;
   font-weight: 600;
   padding-right: 2rem;
+  color: #141417;
 }
 .card__hero-header {
   display: flex;
