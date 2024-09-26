@@ -9,10 +9,10 @@
 
 .title{
   color: #77B8EB;
-  font-size: 3rem !important;
+  font-size: 5rem !important;
   margin: 0;
   padding: 15px 0px;
-  text-shadow: 0px 0px 50px #77B8EB;
+  text-shadow: 0px 0px 40px #77b9ebb0;
 }
 
 .title2{
@@ -42,6 +42,10 @@
     position: absolute;
     top: 95.5vh !important;
   }
+
+  .title{
+    font-size: 3rem !important;
+  }
 }
 
 .flecha{
@@ -58,7 +62,7 @@
 }
 
 .text{
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 @keyframes animate {
