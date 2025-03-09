@@ -1,11 +1,9 @@
 .info{
   position: relative;
-  top: 25vh;
   width: 100%;
   display: flex;
   justify-content: center;
   margin-top: 7rem;
-  /* border: 2px solid white; */
 }
 
 .info_left{
@@ -22,6 +20,7 @@
   display: flex;
   flex-direction: column;
   width: 70%;
+  height: 900px;
   position: sticky;
   top: 0;
   padding: 15px 0px;
@@ -102,6 +101,15 @@
   background-color: #77B8EB;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
+}
+
+.cta.active .hover-underline-animation:after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.cta.active svg {
+  transform: translateX(0);
 }
 
 .cta:hover .hover-underline-animation:after {
@@ -189,8 +197,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 70%;
-  margin-top: 1rem;
+  width: 100%;
   position: absolute;
   bottom: 0;
   padding-bottom: 15px;
@@ -301,7 +308,16 @@ ul {
   color: black;
 }
 
-/* From Uiverse.io by Creatlydev */ 
+.segmentos_cards{
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem 2rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
 .card {
   margin: auto;
   width: min(300px, 100%);
@@ -311,9 +327,9 @@ ul {
   color: #141417;
 }
 .card__hero {
-  background-color: #fef4e2;
+  background-color: #77B8EB;
   border-radius: 0.5rem 0.5rem 0 0;
-  padding: 1.5rem;
+  padding: 1rem;
   font-size: 0.875rem;
 }
 .card__hero .card__job-title {
@@ -332,24 +348,22 @@ ul {
   gap: 1rem;
   font-weight: 700;
 }
+.card__hero-header span{
+  font-size: 1.3rem;
+  color: #141417;
+  text-align: center;
+  width: 100%;
+}
 .card__footer {
   display: flex;
-  justify-content: flex-start;
-  align-items: start;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column !important;
   flex-wrap: nowrap;
   padding: 0.75rem;
   row-gap: 1rem;
   font-weight: 700;
   font-size: 0.875rem;
-}
-@media (min-width: 340px) {
-  .card__footer {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-  }
 }
 .card__job-summary {
   display: flex;
@@ -360,20 +374,99 @@ ul {
   gap: 0.75rem;
 }
 .card__btn {
-  width: 100%;
   font-weight: 400;
   border: none;
   display: block;
   cursor: pointer;
   text-align: center;
-  padding: 0.5rem 1.25rem;
-  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
   background-color: #141417;
   color: #fff;
   font-size: 1rem;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.582);
 }
-@media (min-width: 340px) {
-  .card__btn {
-    width: max-content;
-  }
+
+.card__btn:hover {
+  background-color: black;
+  box-shadow: 2px 2px 5px black;
+}
+.card__job-text{
+  font-size: 1.1rem;
+  color: #141417;
+  text-align: justify;
+  margin: 0;
+  text-align: center;
+}
+.card__img{
+  border-radius: 5px;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.segmentos_skills{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7rem ;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2rem;
+  margin-top: 6rem;
+}
+
+.tooltipSK{
+  width: 14%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.tooltipSK img{
+  width: 100%;
+  z-index: 2;
+  opacity: 0.6;
+}
+
+.tooltipSK .tooltiptext{
+  visibility: hidden;
+  width: 120px;
+  background-color: #77B8EB;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 70%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+  font-weight: bold;
+  box-shadow: 0px 0px 10px #77b9eb7e;
+}
+
+.tooltipSK .tooltiptext::after{
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #77B8EB transparent transparent transparent;
+}
+
+.tooltipSK:hover .tooltiptext{
+  visibility: visible;
+  opacity: 1;
+  bottom: 115%;
+}
+
+.tooltipSK:hover img{
+  opacity: 1;
 }

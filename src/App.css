@@ -7,6 +7,17 @@
   /* border: 2px solid white; */
 }
 
+.portada{
+  /* border: 2px solid red; */
+  width: 100%;
+  height: 840px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
 .title{
   color: #77B8EB;
   font-size: 5rem !important;
@@ -50,8 +61,8 @@
 
 .flecha{
   position: absolute;
-  width: 25px;
-  top: 97vh;
+  width: 30px;
+  top: 95vh;
   animation: animate 1.5s infinite;
   cursor: pointer;
   transition: .2s ease-in-out;
@@ -70,7 +81,7 @@
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
   }
   100% {
     transform: translateY(0);
