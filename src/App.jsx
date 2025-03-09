@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { Informacion } from './components/Informacion/Informacion';
-import MyImg from './assets/MyImg.png';
+import MyImg from './assets/MyImg2.png';
 import Flecha from './assets/flecha.png';
 import Particulas from './components/Particulas/Particulas';
 import './App.css';
